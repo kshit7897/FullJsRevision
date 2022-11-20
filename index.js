@@ -74,11 +74,34 @@
 // let filter = [...new Set(chars)];
 // console.log(filter);
 
-let arr = [1, 1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 8, 8];
-let narr = [];
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] + 1 === arr[i]) {
-    console.log(narr.push[i]);
-  }
-  console.log(narr);
-}
+// let arr = [1, 1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 8, 8];
+// let narr = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] + 1 === arr[i]) {
+//     console.log(narr.push[i]);
+//   }
+//   console.log(narr);
+// }
+
+// var str = "Hello, World, etc";
+// var myarray = str.split("/");
+
+// for (var i = 0; i < myarray.length; i++) {
+//   console.log(myarray[i]);
+// }
+
+// let str = "aircamus is the future";
+// str = str.split(" ");
+// for (var i = 0; i < str.length; i++) {
+//   str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+// }
+// str = str.join(" ");
+// console.log(str);
+
+var form = document.getElementById("form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var name = document.getElementById("name").value;
+  console.log(name);
+});
