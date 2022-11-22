@@ -98,10 +98,22 @@
 // str = str.join(" ");
 // console.log(str);
 
-var form = document.getElementById("form");
+// var form = document.getElementById("form");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  var name = document.getElementById("name").value;
-  console.log(name);
-});
+// form.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   var name = document.getElementById("name").value;
+//   console.log(name);
+// });
+
+function sum(arr) {
+  for (let number of arr) {
+    for (let j = 1; j < arr.length; j++) {
+      if (number + arr[j] == 0) {
+        return [number, arr[j]];
+      }
+    }
+  }
+}
+const result = sum([-5, -4, -3, -2, 0, 2, 4, 8]);
+console.log(result);
